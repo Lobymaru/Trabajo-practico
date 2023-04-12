@@ -106,9 +106,8 @@ footer {
 .logo{
     position:absolute;
     left: 0;
-    top: -20px;
-    width: 100px;
-    height: calc(100px / 10 * 6);
+    top: -29px;
+    width: 150px;
 }
 
 /* Tamaño del video trailer */

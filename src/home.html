@@ -11,7 +11,7 @@
 <body>
 
     <header>
-        <img src="../public/images/Konami-Logo-2003.png" alt="Logo Konami" class="logo">
+        <a href="https://www.konami.com/games/eu/es/" target="_blank" rel="noopener noreferrer"><img src="../public/images/Konami-Logo-2003.png" alt="Logo Konami" class="logo"></a>
         <h1 class="titulo">METAL GEAR SOLID</h1>
         <h2>Peace Walker</h2>
     </header>
@@ -52,21 +52,51 @@
     <!-- Modal Precompra -->
 
     <div id="modal-precompra" class="modal">
+        <form>
 
-        <div id="precompra" class="modal-precompra">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <p>algo de texto</p>
-            <button type="button" id="cancelar" class="btn-modal-secondary" onclick="closeModal()">Cancelar</button>
-            <button type="button" id="siguiente" class="btn-modal-primary" onclick="nextPage()">Siguiente</button>
-        </div>
+            <div id="precompra" class="modal-precompra">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <label for="campoNombre">Nombre/s:</label> <br>
+                <input type="text" id="campoNombre"> <br>
+                <label for="campoApellido">Apellido/s:</label> <br>
+                <input type="text" id="campoApellido"> <br>
+                <label for="campoMail">Direccion de correo:</label> <br>
+                <input type="text" id="campoMail"> <br>
+                <label for="campoNacimiento">Fecha Nacimiento:</label> <br>
+                <input type="date" id="campoNacimiento" name="fechaNacimiento"> <br>
+                <button type="button" id="cancelar" class="btn-modal-secondary" onclick="closeModal()">Cancelar</button>
+                <button type="button" id="siguiente" class="btn-modal-primary" onclick="nextPage()">Siguiente</button>
+            </div>
 
-        <div id="precompra" class="modal-precompra">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <p>algo de texto de la pagina 2</p>
-            <button type="button" id="atras" class="btn-modal-secondary" onclick="prevPage()">Atras</button>
-            <button type="button" id="siguiente" class="btn-modal-primary" onclick="nextPage()">Siguiente</button>
-        </div>
+            <div id="precompra" class="modal-precompra">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <label for="campoPais">Pais:</label>
+                <select id="campoPais" name="pais">
+                    <option value="Argentina">Argentina</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Brasi">Brasil</option>
+                    <option value="Reino Unido">Reino Unido</option>
+                    <option value="España">España</option>
+                    <option value="Francia">Francia</option>
+                    <option value="Italia">Italia</option>
+                </select> <br>
+                <label for="campoCiudad">Ciudad:</label> <br>
+                <input type="text" id="campoCiudad"> <br>
+                <label for="campoCalle">Calle:</label> <br>
+                <input type="text" id="campoCalle"> <br>
+                <label for="campoTelefono">Telefono:</label> <br>
+                <input type="text" id="campoTelefono"> <br>
+                <button type="button" id="atras" class="btn-modal-secondary" onclick="prevPage()">Atras</button>
+                <button type="button" id="siguiente" class="btn-modal-primary" onclick="nextPage()">Siguiente</button>
+            </div>
 
+            <div id="precompra" class="modal-precompra">
+
+                <button type="button" id="atras" class="btn-modal-secondary" onclick="prevPage()">Atras</button>
+                <button type="button" id="finish" class="btn-modal-primary" onclick="finish()">Finalizar</button>                
+            </div>
+
+        </form>
     </div>
 
     <footer>
