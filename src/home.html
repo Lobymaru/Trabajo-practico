@@ -27,28 +27,47 @@
 
     <section class="flex flex-jc flex-aic flex-v">
         <ul>
-            <li class="flex flex-h flex-start bg-green bg-glass">
+            <li class="flex flex-h  bg-green bg-glass">
                 <img class="img-caracteristicas" src="../public/images/caracteristicas/mgs-pw-no1.webp" alt="Infiltracion">
                 <p>Infiltrate por las bases militares y sorprende a tus enemigos por la espalda</p>
             </li>
-            <li class="flex flex-h flex-start bg-green bg-glass">
+            <li class="flex flex-h flex-jsb  bg-green bg-glass">
                 <p>No estas solo en esta batalla. Uneté a tus amigos y enfrenten juntos los retos mas duros</p>
-                <img class="img-caracteristicas" src="../public/images/caracteristicas/mgs-pw-no2.jpg" alt="Multiplayer">
+                <img class="img-caracteristicas " src="../public/images/caracteristicas/mgs-pw-no2.jpg" alt="Multiplayer">
             </li>
-            <li class="flex flex-h flex-start bg-green bg-glass">
+            <li class="flex flex-h  bg-green bg-glass">
                 <img class="img-caracteristicas" src="../public/images/caracteristicas/mgs-pw-no3.jpeg" alt="Asalto">
                 <p>Enfrentate a diferentes clases de enemigos blindados en peligrosos y emocionantes combates</p>
             </li>
-            <li class="flex flex-h flex-start bg-green bg-glass">
+            <li class="flex flex-h flex-jsb bg-green bg-glass">
                 <p>Metal Gear! Enfrentate a estas enormes maquinas de guerra, solo o junto hasta 3 amigos </p>
                 <img class="img-caracteristicas" src="../public/images/caracteristicas/mgs-pw-no6.jpg" alt="Metal Gear">
             </li>
             <li class="flex flex-h flex-jc">
-                <button type="button" class="btn-precompra">Precomprar <i class="fa-solid fa-cart-shopping"></i></button>
+                <button type="button" id="btn-precompra" class="btn-precompra">Precomprar <i class="fa-solid fa-cart-shopping"></i></button>
             </li>
         </ul>
-
     </section>
+
+    <!-- Modal Precompra -->
+
+    <div id="modal-precompra" class="modal">
+
+        <div id="precompra" class="modal-precompra">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>algo de texto</p>
+            <button type="button" id="cancelar" class="btn-modal-secondary" onclick="closeModal()">Cancelar</button>
+            <button type="button" id="siguiente" class="btn-modal-primary" onclick="nextPage()">Siguiente</button>
+        </div>
+
+        <div id="precompra" class="modal-precompra">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>algo de texto de la pagina 2</p>
+            <button type="button" id="atras" class="btn-modal-secondary" onclick="prevPage()">Atras</button>
+            <button type="button" id="siguiente" class="btn-modal-primary" onclick="nextPage()">Siguiente</button>
+        </div>
+
+    </div>
 
     <footer>
         <p>Derechos de autor © 2023 - Mi Página Web</p>
