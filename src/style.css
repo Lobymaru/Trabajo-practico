@@ -104,6 +104,7 @@ footer {
     top: -20px;
     width: 100px;
     height: calc(100px / 10 * 6);
+    size-adjust: 200px;
 }
 
 /* Tamaño del video trailer */
