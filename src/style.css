@@ -108,8 +108,8 @@ footer {
 
 /* Tamaño del video trailer */
 .trailer{
-    width: 95vw;
-    height: calc(95vw / 16 * 9);
+    width: 45vw;
+    height: calc(45vw / 10 * 5);
 }
 
 /* Estilos de fondos*/
