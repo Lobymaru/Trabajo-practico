@@ -108,8 +108,11 @@ footer {
 
 /* Tamaño del video trailer */
 .trailer{
+
     width: 45vw;
     height: calc(45vw / 10 * 5);
+    width: 75vw;
+    height: calc(75vw / 16 * 9);
 }
 
 /* Estilos de fondos*/
@@ -131,10 +134,12 @@ footer {
     height: 180px;
 }
 .p_caracteristicas{
+    
     padding: 20px 30px 0 30px;
 }
 
 .btn-precompra{
+    margin-top: 20px;
     font-size: 1.2rem;
     font-weight: bold;
     background-color: rgb(8, 247, 32);
@@ -142,5 +147,6 @@ footer {
     border:0;
     border-radius: 20px;
     right: 50px;
-    
+    padding-top: 10px;
+    padding-bottom: 10px;
 }

@@ -1,0 +1,57 @@
+.principal{
+    background-image: url('/disenio/black_snake_derecha.jpg');
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+}
+.segundario{
+    padding-top: 80px;
+    background-image: url('/disenio/fondo_metal.jpg');
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+}
+
+.nav{
+    background-color: black;
+    background-image: url('/disenio/global-nav-bg.png');
+    background-size: 2px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+.logo{
+    position:absolute;
+    left: 0;
+    width: 180px;
+    height: 140px;
+}
+
+.logo_blanco{
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.trailer{
+    margin-top: 60px;
+    display: flex;
+    height: 35.5vh;
+    margin-left: 110px;
+}
+.letra_medio{
+    font-family: Montserrat;
+    font-size: 16px;
+    color: white;
+    margin-left: 140px;
+    margin-top: -15px;
+}
+.nombre{
+    font-family: Montserrat;
+    font-size: 16px;
+    color: white;
+    margin-left: 140px;
+    margin-top: -15px;
+    text-align: end;
+}
