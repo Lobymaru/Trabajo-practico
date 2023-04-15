@@ -168,7 +168,6 @@ footer {
 .modal-precompra{  /* parametros de prueba*/
     transition: all ease-in-out 0.3s;
     position:absolute;
-    top:10%;
     background-color: #fefefe;
     margin:10%;
     padding: 20px;
@@ -188,4 +187,13 @@ footer {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+.recivo{
+    height: 100%;
+    margin: -20px -20px
+}
+.recivo p {
+    padding: 2px 0;
+    margin: 0;
 }

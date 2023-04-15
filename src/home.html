@@ -92,7 +92,21 @@
 
             <div id="precompra" class="modal-precompra">
 
-                <a href="javascript:createRecipe()">Download</a>
+                <div id="recivo" class="flex flex-v recivo">
+                    <img src="../public/images/Konami-Logo-2003.png" alt="Logo Konami" class="logo"> <br>
+                    <h4>Gracias por reservar el Metal Gear: Peace Walker! <br>
+                        Guarde este recivo para reclamar su reserva el díadel lanzamiento</h4><br>
+                    <p id="recivoNombre"></p>
+                    <p id="recivoNacimiento"></p>
+                    <p id="recivoCorreo"></p>
+                    <p id="recivoPais"> </p>
+                    <p id="recivoDomicilio"></p>
+                    <p id="recivoTelefono"></p>
+                    <br>       
+                </div>
+
+                <button type="button" id="download" class="btn-modal-download" ><a href="javascript:createRecipe()">Download</a></button>                    
+                <br>
                 <button type="button" id="atras" class="btn-modal-secondary" onclick="prevPage()">Atras</button>
                 <button type="button" id="finish" class="btn-modal-primary" onclick="finish()">Finalizar</button>                
             </div>
@@ -103,7 +117,10 @@
     <footer>
         <p>Derechos de autor © 2023 - Mi Página Web</p>
     </footer>
+    <script src="./Libraries/jquery-3.6.4.js"></script>
+    <script src="./Libraries/validate.js"></script>
     <script src="./Libraries/jspdf.min.js"></script>
+    <script src="Libraries/html2canvas.min.js"></script>
     <script src="index.js"></script>
 </body>
 
