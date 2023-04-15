@@ -44,7 +44,7 @@
                 <img class="img-caracteristicas" src="../public/images/caracteristicas/mgs-pw-no6.jpg" alt="Metal Gear">
             </li>
             <li class="flex flex-h flex-jc">
-                <button type="button" id="btn-precompra" class="btn-precompra">Precomprar <i class="fa-solid fa-cart-shopping"></i></button>
+                <button type="button" id="btn-precompra" class="btn-precompra" onclick="openModal()">Precomprar <i class="fa-solid fa-cart-shopping"></i></button>
             </li>
         </ul>
     </section>
@@ -92,6 +92,7 @@
 
             <div id="precompra" class="modal-precompra">
 
+                <a href="javascript:createRecipe()">Download</a>
                 <button type="button" id="atras" class="btn-modal-secondary" onclick="prevPage()">Atras</button>
                 <button type="button" id="finish" class="btn-modal-primary" onclick="finish()">Finalizar</button>                
             </div>
@@ -102,6 +103,7 @@
     <footer>
         <p>Derechos de autor © 2023 - Mi Página Web</p>
     </footer>
+    <script src="./Libraries/jspdf.min.js"></script>
     <script src="index.js"></script>
 </body>
 
