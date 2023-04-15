@@ -55,3 +55,23 @@
     margin-top: -15px;
     text-align: end;
 }
+
+.fila{
+    display: flex;
+}
+.zoom{
+    overflow: hidden;
+    height: 285px;
+    width: 506.5px;
+}
+
+.img_cuadro{
+    height: 285px;
+    width: 506.5px;
+    transition: 0.5s;
+    object-fit: cover;
+}
+
+.img_cuadro:hover{
+    transform: scale(1.2);
+}
