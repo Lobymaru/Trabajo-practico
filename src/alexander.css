@@ -61,6 +61,9 @@
 .fila{
     display: flex;
 }
+.fila-1{
+    display: flex;
+}
 .zoom{
     overflow: hidden;
     height: 285px;
@@ -72,6 +75,10 @@
     width: 506.5px;
     transition: 0.5s;
     object-fit: cover;
+}
+.img_descripcion{
+    height: 100%;
+
 }
 
 .img_cuadro:hover{
@@ -118,4 +125,18 @@ label{
     color: #ACB2B8;
     font-weight: bold;
 
+}
+.parrafo{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+    padding-top: 30px;
+    padding-right: 40px;
+}
+figcaption{
+    color: white !important;
+}
+.img_circulo{
+height: 320px;
 }

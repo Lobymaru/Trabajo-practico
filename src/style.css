@@ -108,6 +108,9 @@ footer {
 
 /* Tamaño del video trailer */
 .trailer{
+
+    width: 45vw;
+    height: calc(45vw / 10 * 5);
     width: 75vw;
     height: calc(75vw / 16 * 9);
 }
@@ -139,10 +142,11 @@ footer {
     margin-top: 20px;
     font-size: 1.2rem;
     font-weight: bold;
-    background-color: tomato;
+    background-color: rgb(8, 247, 32);
     width: 140px;
     border:0;
     border-radius: 20px;
+    right: 50px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
