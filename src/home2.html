@@ -6,6 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="alexander.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js "
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="validacion_formulario.js"></script>
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -22,16 +31,19 @@
     </nav>
 
     <div class="principal row-origin">
-        <img class ="logo_blanco col-4" src="/disenio/letras_blancas.png" alt="logo con letras blancas">
-        <p class ="col-4 letra_medio"><em>"Un hombre fuerte no necesita saber su futuro, crea el suyo propio".</em></p>
-        <p class ="col-3 nombre"><b>SOLID SNAKE</b></p>
-        <iframe class="trailer col-4" src="https://www.youtube.com/embed/fEch43gyTRY" title="Metal Gear Solid - Peace Walker Official E3 Trailer [HQ]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <img class="logo_blanco col-4" src="/disenio/letras_blancas.png" alt="logo con letras blancas">
+        <p class="col-4 letra_medio"><em>"Un hombre fuerte no necesita saber su futuro, crea el suyo propio".</em></p>
+        <p class="col-3 nombre"><b>SOLID SNAKE</b></p>
+        <iframe class="trailer col-4" src="https://www.youtube.com/embed/fEch43gyTRY"
+            title="Metal Gear Solid - Peace Walker Official E3 Trailer [HQ]" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
 
     </div>
     <section id="galeria">
         <div class="row-origin fila">
             <div class="col-md-4 zoom">
-                <img class="img_cuadro"  src="../public/images/caracteristicas/mgs-pw-no1.webp" alt="Infiltracion">
+                <img class="img_cuadro" src="../public/images/caracteristicas/mgs-pw-no1.webp" alt="Infiltracion">
             </div>
             <div class="col-md-4 zoom">
                 <img class="img_cuadro" src="../public/images/caracteristicas/mgs-pw-no2.jpg" alt="Multiplayer">
@@ -44,7 +56,7 @@
         </div>
         <div class="row-origin fila">
             <div class="col-md-4 zoom">
-                <img class="img_cuadro"  src="../public/images/caracteristicas/mgs-pw-no6.jpg" alt="Metal Gear">
+                <img class="img_cuadro" src="../public/images/caracteristicas/mgs-pw-no6.jpg" alt="Metal Gear">
             </div>
             <div class="col-md-4 zoom">
                 <img class="img_cuadro" src="../disenio/esquina.jpg" alt="Esquina">
@@ -55,20 +67,127 @@
 
             </div>
         </div>
-        
+
 
     </section>
     <div class="segundario">
+        <div class="container">
+            <div class="row-origin flex">
+                <div class="col-md-7 descripcion">
+                    <h3>
+                        Argumento
+                    </h3>
+                    <p class="letras_info">
+                        En Costa Rica en 1974, Ramón Gálvez Mena y Paz, ambos de la Universidad de la Paz de Costa Rica,
+                        le informan a Snake que un ejército desconocido de soldados bien equipados ha tomado el país.
+                        Los soldados también han adquirido armas nucleares, y Big Boss es solicitado para salvar el
+                        país, junto a sus Militaires Sans Frontieres (Soldados Sin Fronteras). Posteriormente, se
+                        descubre que los soldados que invadieron el país fueron financiados por la CIA, de manera que si
+                        Big Boss lucha contra ellos, se convertirá en un enemigo para Estados Unidos. A pesar de haberse
+                        negado en un principio, Snake acepta la petición del profesor, ya que él le mostró una grabación
+                        de Costa Rica en la que se escuchaba hablando a la mentora de Big Boss, The Boss.
+                    </p>
+                    <h3>
+                        Personajes
+                    </h3>
+                    <ul class="letras_info">
+                        <li>
+                            <b>Naked Snake (A.K.A. Big Boss) </b>
+                        </li>
+                        <li>
+                            <b>Kazuhira "Kaz" Miller</b>
+                        </li>
+                        <li>
+                            <b>Paz Ortega Andrade</b>
+                        </li>
+                        <li>
+                            <b>Ramón Gálvez Mena/Vladimir Zadornov</b>
+                        </li>
+                        <li>
+                            <b>Amanda Valenciano Libre</b>
+                        </li>
+                        <li>
+                            <b>Chico</b>
+                        </li>
+                        <li>
+                            <b>Huey</b>
+                        </li>
+                        <li>
+                            <b>Cécile Cosima Caminades </b>
+                        </li>
+                        <li>
+                            <b>Dr. Strangelove</b>
+                        </li>
+                        <li>
+                            <b>Coldman</b>
+                        </li>
+                        <li>
+                            <b>Trenya (personaje oculto)</b>
+                        </li>
+                    </ul>
+                    <h3>
+                        Modos de juego
+                    </h3>
+                    <p class="letras_info">
+                        El sistema usado para esta versión de Metal Gear es en vista de tercera persona, y en el cual
+                        Big Boss tiene una variedad de movimientos que le permiten sortear los obstáculos del entorno:
+                        caminar, agacharse, arrastrarse y colgarse, muy similar al modo de juego de Metal Gear Solid 4:
+                        Guns of the Patriots.<br><br>
 
+                        El jugador puede personalizar a Big Boss antes de empezar una misión. También puede elegir entre
+                        jugar de manera sigilosa o adentrarse con armas de fuego en acción. Si elige ser sigiloso, su
+                        arsenal será el adecuado para un movimiento más furtivo. Además, habrá una nueva característica
+                        de "crecimiento", que permitirá a Big Boss "evolucionar", de manera similar a los juegos de rol.
+                        Además, hay varios tipos de cajas de cartón[2] que cumplen distintas funciones.<br>
+                        Una característica esencial del juego, es que se reemplazan las escenas cinemáticas por viñetas
+                        estilo cómic; esto se hizo con el objetivo de aprovechar las capacidades de la PSP en la
+                        jugabilidad. Dichas escenas son dinámicas, pues el jugador tiene la capacidad de interactuar con
+                        ellas oprimiendo un botón o moviendo el mando analógico en momentos específicos, incluso se
+                        tendrán que sortear ciertas pruebas en medio de éstas viñetas, como dispararle a un enemigo, o
+                        esquivar un golpe.<br><br>
 
+                        Peace Walker tiene un modo de juego multijugador cooperativo. El juego permite que de dos a
+                        cuatro jugadores jueguen juntos, ayudándose entre sí a superar misiones connjuntas, por ejemplo:
+                        un jugador utiliza al otro para poder acceder a lugares más altos. Los jugadores también podrán
+                        curar y revivir a sus compañeros, y hacer que los otros jugadores sigan los movimientos de un
+                        jugador. Hay diferentes cajas de cartón que se podrán encontrar en el juego, como una en forma
+                        de tanque, y que pueden afectar al estado del jugador.[3] Otra novedad notable, es que cuando el
+                        menú de objetos/armas está puesto, el juego no se pausa. Esto se justifica en un intento de
+                        simular que "la vida real no se puede pausar".<br><br>
+                    </p>
+                </div>
+                <div class="col-md-4 offset-md-1 formulario">
+                    <form id="contacto" >
+                        <div class="mb-3">
+                            <label class="form-label" for="name">Nombre:</label>
+                            <input class="form-control" type="text" name="name" id="name">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="edad">Edad:</label>
+                            <input class="form-control" type="number" name="edad" id="edad">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="email">Email:</label>
+                            <input class="form-control" type="email" name="email" id="email">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label" for="consulta">Consulta:</label>
+                            <textarea class="form-control" name="consulta" id="consulta" cols="30" rows="5"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <input class="btn btn-primary" type="reset" value="Limpiar">
+                            <input id="btn_enviar" class="btn btn-primary" type="submit" value="Enviar">
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+        </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js "
-        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
-        crossorigin="anonymous"></script>
+
+
 </body>
 
 </html>
