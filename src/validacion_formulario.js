@@ -1,13 +1,12 @@
-$(document).ready(function(){
     $("#contacto").validate({
         rules: {
             name: {
                 required : true,
-                minlenght: 3
+                minlength: 3
             },
             edad: {
                 required: true,
-                number: true,
+                digits: true,
                 min: 18,
                 max: 100
             },
@@ -22,7 +21,7 @@ $(document).ready(function(){
         messages:{
             name: {
                 required: "Por favor ingrese su nombre",
-                minlenght: "El nombre debe tener al menos 3 caracteres"
+                minlength: "El nombre debe tener al menos 3 caracteres"
             },
             edad: {
                 required: "Por favor ingrese su edad",
@@ -39,5 +38,15 @@ $(document).ready(function(){
             }
         }
     });
+
+
+$("#btn_enviar").click(function () {          
+
+    if ($("#contacto").valid() == false) {  
+        return
+    } 
+    alert("Su consulta a sido enviada exitosamente");
+    document.getElementById("contacto").reset();
+
 });
 

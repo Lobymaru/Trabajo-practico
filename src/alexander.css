@@ -13,6 +13,9 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.btn_precompra{
+    right: 0;
+}
 
 .nav{
     background-color: black;
@@ -21,7 +24,7 @@
     height: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     position: fixed;
     width: 100%;
 }
@@ -157,4 +160,18 @@ figcaption{
 }
 .img_circulo{
 height: 320px;
+}
+.error{
+    color: rgba(255, 0, 0, 0.866);
+}
+
+.btn_precompra{
+    box-shadow: inset 0px 0px 30px #bb9934;
+    border: 1px solid #679e25;
+    background-color: #85e229;
+    width: 180px;
+    height: 100%;
+    right: 0;
+    color: white;
+    text-transform: uppercase;
 }
