@@ -11,7 +11,7 @@
 <body>
 
     <header>
-        <img src="../public/images/Konami-Logo-2003.png" alt="Logo Konami" class="logo">
+        <a href="https://www.konami.com/games/eu/es/" target="_blank" rel="noopener noreferrer"><img src="../public/images/Konami-Logo-2003.png" alt="Logo Konami" class="logo"></a>
         <h1 class="titulo">METAL GEAR SOLID</h1>
         <h2>Peace Walker</h2>
         <div class="flex flex-h flex-jc">
@@ -31,30 +31,107 @@
 
     <section class="flex flex-jc flex-aic flex-v">
         <ul>
-            <li class="flex flex-h flex-start bg-green bg-glass mb-4">
+            <li class="flex flex-h  bg-green bg-glass">
                 <img class="img-caracteristicas" src="../public/images/caracteristicas/mgs-pw-no1.webp" alt="Infiltracion">
                 <p class="p_caracteristicas">Infiltrate por las bases militares y sorprende a tus enemigos por la espalda</p>
             </li>
-            <li class="flex flex-h flex-start bg-green bg-glass">
-                <p class="p_caracteristicas">No estas solo en esta batalla. Uneté a tus amigos y enfrenten juntos los retos mas duros</p>
-                <img class="img-caracteristicas" src="../public/images/caracteristicas/mgs-pw-no2.jpg" alt="Multiplayer">
+            <li class="flex flex-h flex-jsb  bg-green bg-glass">
+                <p>No estas solo en esta batalla. Uneté a tus amigos y enfrenten juntos los retos mas duros</p>
+                <img class="img-caracteristicas " src="../public/images/caracteristicas/mgs-pw-no2.jpg" alt="Multiplayer">
             </li>
-            <li class="flex flex-h flex-start bg-green bg-glass">
+            <li class="flex flex-h  bg-green bg-glass">
                 <img class="img-caracteristicas" src="../public/images/caracteristicas/mgs-pw-no3.jpeg" alt="Asalto">
                 <p class="p_caracteristicas">Enfrentate a diferentes clases de enemigos blindados en peligrosos y emocionantes combates</p>
             </li>
-            <li class="flex flex-h flex-start bg-green bg-glass">
-                <p class="p_caracteristicas">Metal Gear! Enfrentate a estas enormes maquinas de guerra, solo o junto hasta 3 amigos </p>
+            <li class="flex flex-h flex-jsb bg-green bg-glass">
+                <p>Metal Gear! Enfrentate a estas enormes maquinas de guerra, solo o junto hasta 3 amigos </p>
                 <img class="img-caracteristicas" src="../public/images/caracteristicas/mgs-pw-no6.jpg" alt="Metal Gear">
             </li>
-           
+            <li class="flex flex-h flex-jc">
+                <button type="button" id="btn-precompra" class="btn-precompra" onclick="openModal()">Precomprar <i class="fa-solid fa-cart-shopping"></i></button>
+            </li>
         </ul>
-
     </section>
+
+    <!-- Modal Precompra -->
+
+    <div id="modal-precompra" class="modal">
+
+            <div id="precompra" class="modal-precompra">
+                <form action="" name="formularioWizard01" id="formularioWizard01">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <label for="campoNombre">Nombre/s:</label> <br>
+                    <input type="text" name="nombre" id="campoNombre"> <br>
+                    <label for="campoApellido">Apellido/s:</label> <br>
+                    <input type="text" name="apellido" id="campoApellido"> <br>
+                    <label for="campoMail">Direccion de correo:</label> <br>
+                    <input type="email" name="mail" id="campoMail"> <br>
+                    <label for="campoNacimiento">Fecha Nacimiento:</label> <br>
+                    <input type="date" name="nacimiento" id="campoNacimiento" name="fechaNacimiento"> <br>
+                </form>
+                <button type="button" id="cancelar" class="btn-modal-secondary">Cancelar</button>
+                <button type="button" id="siguienteUno" class="btn-modal-primary">Siguiente</input>
+                
+            </div>
+
+            <div id="precompra" class="modal-precompra">
+                <form action="" id="formularioWizard02">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <label for="campoPais">Pais:</label>
+                    <select id="campoPais" name="pais">
+                        <option value="Argentina">Argentina</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Brasi">Brasil</option>
+                        <option value="Reino Unido">Reino Unido</option>
+                        <option value="España">España</option>
+                        <option value="Francia">Francia</option>
+                        <option value="Italia">Italia</option>
+                    </select> <br>
+                    <label for="campoCiudad">Ciudad:</label> <br>
+                    <input type="text" id="campoCiudad"> <br>
+                    <label for="campoCalle">Calle:</label> <br>
+                    <input type="text" id="campoCalle"> <br>
+                    <label for="campoTelefono">Telefono:</label> <br>
+                    <input type="text" id="campoTelefono"> <br>
+                </form>
+                <button type="button" id="atras" class="btn-modal-secondary" onclick="prevPage()">Atras</button>
+                <button type="button" id="siguienteDos" class="btn-modal-primary">Siguiente</button>
+            </div>
+
+            <div id="precompra" class="modal-precompra">
+
+                <div id="recivo" class="flex flex-v recivo">
+                    <img src="../public/images/Konami-Logo-2003.png" alt="Logo Konami" class="logo"> <br>
+                    <h4>Gracias por reservar el Metal Gear: Peace Walker! <br>
+                        Guarde este recivo para reclamar su reserva el díadel lanzamiento</h4><br>
+                    <p id="recivoNombre"></p>
+                    <p id="recivoNacimiento"></p>
+                    <p id="recivoCorreo"></p>
+                    <p id="recivoPais"> </p>
+                    <p id="recivoDomicilio"></p>
+                    <p id="recivoTelefono"></p>
+                    <br>       
+                </div>
+
+                <button type="button" id="download" class="btn-modal-download" ><a href="javascript:createRecipe()">Download</a></button>                    
+                <br>
+                <button type="button" id="atras" class="btn-modal-secondary" onclick="prevPage()">Atras</button>
+                <button type="button" id="finish" class="btn-modal-primary" onclick="closeModal()">Finalizar</button>                
+            </div>
+
+    </div>
 
     <footer>
         <p>Derechos de autor © 2023 - Mi Página Web</p>
     </footer>
+    <script
+        src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="./Libraries/jspdf.min.js"></script>
+    <script src="Libraries/html2canvas.min.js"></script>
     <script src="index.js"></script>
 </body>
 
