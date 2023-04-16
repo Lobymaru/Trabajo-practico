@@ -119,3 +119,21 @@ label{
     font-weight: bold;
 
 }
+.img_descripcion{
+    height: 100%;
+
+}
+.parrafo{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+    padding-top: 30px;
+    padding-right: 40px;
+}
+figcaption{
+    color: white !important;
+}
+.img_circulo{
+height: 320px;
+}
