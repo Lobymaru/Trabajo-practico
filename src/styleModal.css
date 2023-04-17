@@ -73,12 +73,12 @@
   cursor: pointer;
 }
 
-/* Se ajusta el margen debido al logo que quedaba fuera del recivo en la captura de html2canvas*/
-.recivo{
+/* Se ajusta el margen debido al logo que quedaba fuera del recibo en la captura de html2canvas*/
+.recibo{
     height: 100%;
     margin: -20px -20px;
 }
-.recivo p {
+.recibo p {
     padding: 2px 0;
     margin: 0;
 }

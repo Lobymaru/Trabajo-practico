@@ -51,13 +51,13 @@ function nextPage() {
         pages[i].style.left = String(parseInt(pages[i].style.left) - 100) + "%"; // Desplaza a la izquierda las paginas del modal 
     }
 
-    // Inserta los valores de los campos en la pagina final del formulario, donde se encuentra el recivo
-    document.getElementById("recivoNombre").innerHTML = "Nombre: " + apellido + " " + nombre;
-    document.getElementById("recivoNacimiento").innerHTML = "Fecha de Nacimiento: " + nacimiento;
-    document.getElementById("recivoCorreo").innerHTML = "Direccion de Correo Electronico: " + mail;
-    document.getElementById("recivoPais").innerHTML = "Nacionalidad: " + pais;
-    document.getElementById("recivoDomicilio").innerHTML = "Direccion: " + calle + ", " + ciudad;
-    document.getElementById("recivoTelefono").innerHTML = "Telefono: " + telefono;
+    // Inserta los valores de los campos en la pagina final del formulario, donde se encuentra el recibo
+    document.getElementById("reciboNombre").innerHTML = "Nombre: " + apellido + " " + nombre;
+    document.getElementById("reciboNacimiento").innerHTML = "Fecha de Nacimiento: " + nacimiento;
+    document.getElementById("reciboCorreo").innerHTML = "Direccion de Correo Electronico: " + mail;
+    document.getElementById("reciboPais").innerHTML = "Nacionalidad: " + pais;
+    document.getElementById("reciboDomicilio").innerHTML = "Direccion: " + calle + ", " + ciudad;
+    document.getElementById("reciboTelefono").innerHTML = "Telefono: " + telefono;
 
 }
 
@@ -76,7 +76,7 @@ function prevPage() {
 // Creacion y manipulacion del PDF
 function createRecipe() {
 
-    html2canvas(document.getElementById("recivo")).then(function (canvas) {  //Funcion que toma una captura del elemento html indicado y la convierte en una imagen
+    html2canvas(document.getElementById("recibo")).then(function (canvas) {  //Funcion que toma una captura del elemento html indicado y la convierte en una imagen
       var img = canvas.toDataURL("image/png");  //Indicamos el tipo de imagen de la captura
       var doc = new jsPDF({
         orientation: "l",

@@ -14,25 +14,27 @@
     background-size: cover;
 }
 .btn_precompra{
+    position: absolute;
     right: 0;
 }
 
-.nav{
+.nav-bar{
     background-color: black;
     background-image: url('/disenio/global-nav-bg.png');
     background-size: 2px;
     height: 50px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
     position: fixed;
     width: 100%;
+    z-index: 10;
 }
 .logo{
     position:absolute;
     left: 0;
     width: 180px;
     height: 140px;
+    margin-right: 200px;
 }
 
 .logo_blanco{
@@ -69,12 +71,23 @@
 }
 .zoom{
     overflow: hidden;
-    height: 285px;
+    height: 315px;
     width: 506.5px;
 }
-
+.detalle{
+    background-color: black;
+    color: white;
+    height: 60px;
+    z-index: 10;
+    width: 100%;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+    display: flex;
+    text-transform:uppercase;
+}
 .img_cuadro{
-    height: 285px;
+    height: 255px;
     width: 506.5px;
     transition: 0.5s;
     object-fit: cover;
@@ -174,4 +187,9 @@ height: 320px;
     right: 0;
     color: white;
     text-transform: uppercase;
+}
+
+a{
+    text-decoration: none !important;
+    
 }
