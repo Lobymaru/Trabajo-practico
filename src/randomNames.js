@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-    var page = 1;
-    var arregloNombres = [];
     getNames();
 
     function getNames() {
@@ -17,7 +15,6 @@ $(document).ready(function() {
                 let item = document.createElement("li");
                 let name = element["name"];
                 item.appendChild(document.createTextNode(name["first"]+ " " + name["last"]));         
-                console.log(item);       
                 listaDeNombres.appendChild(item);
             })
         })

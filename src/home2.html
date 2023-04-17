@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="alexander.css">
     <link rel="stylesheet" href="styleModal.css">
+    <link rel="stylesheet" href="randomNames.css">
     <link rel="stylesheet"
         href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -18,11 +19,13 @@
 
     <nav class="nav nav-bar">
         <img src="../public/images/Konami-Logo-2003.png" alt="Logo Konami" class="logo">
-            <a href="#inicio">Opción 1</a>
-            <a href="#intro">Opción 2</a> 
-            <a href="#galeria">Opción 3</a>
-            <a href="#descripcion">Opción 4</a>
-            <a href="#form-cont">Opción 5</a>
+        <div class="margen">
+            <a href="#inicio">INICIO</a>
+            <a href="#intro">INTRO</a>
+            <a href="#galeria">GALERÍA</a>
+            <a href="#descripcion">DESCRIPCIÓN</a>
+            <a href="#form-cont">CONTACTANOS</a>
+        </div>
         <button class="btn_precompra" type="button" id="btn-precompra" onclick="openModal()">Pre comprar</button>
 
     </nav>
@@ -36,44 +39,50 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
     </div>
-<section id="intro" >
-    <div class="row-origin fila-1" >
-        <div class="col-md-4 img_circulo">
-            <img class="img_descripcion" src="/public/images/caracteristicas/60ca12bd3bd0f4525f7d35a03024a605.jpg"
-                alt="logo">
-        </div>
-        <div class="col-md-8 parrafo" style="background-color: black;">
-            <figure>
-                <figcaption class="blockquote-footer">
-                    Metal Gear Solid es un juego de acción y aventura, El juego sigue la historia de Solid Snake, un ex
-                    agente del gobierno que es reclutado para detener una amenaza terrorista en una instalación militar
-                    secreta en Alaska.</br>
+    <section id="intro">
+        <div class="row-origin fila-1">
+            <div class="col-md-4 img_circulo">
+                <img class="img_descripcion" src="/public/images/caracteristicas/60ca12bd3bd0f4525f7d35a03024a605.jpg"
+                    alt="logo">
+            </div>
+            <div class="col-md-8 parrafo" style="background-color: black;">
+                <figure>
+                    <figcaption class="blockquote-footer">
+                        Metal Gear Solid es un juego de acción y aventura, El juego sigue la historia de Solid Snake, un
+                        ex
+                        agente del gobierno que es reclutado para detener una amenaza terrorista en una instalación
+                        militar
+                        secreta en Alaska.</br>
 
-                    La trama del juego está llena de giros y sorpresas, con personajes complejos y bien desarrollados
-                    que hacen que la historia sea emocionante e intrigante. La jugabilidad es un híbrido entre el sigilo
-                    y la acción, con la capacidad de esconderse, arrastrarse y acechar a los enemigos para evitar la
-                    detección.</br>
+                        La trama del juego está llena de giros y sorpresas, con personajes complejos y bien
+                        desarrollados
+                        que hacen que la historia sea emocionante e intrigante. La jugabilidad es un híbrido entre el
+                        sigilo
+                        y la acción, con la capacidad de esconderse, arrastrarse y acechar a los enemigos para evitar la
+                        detección.</br>
 
-                    El juego es conocido por su innovador sistema de caja de cartón, que permite a los jugadores
-                    esconderse de los enemigos y avanzar furtivamente en el campo de batalla. Además, Metal Gear Solid
-                    fue uno de los primeros juegos en utilizar cinemáticas de estilo de película para avanzar la
-                    historia.</br>
-                    <cite title="source title"></br>
-                        <h5>A continuacion encontraras diferentes caracteristicas que trae este novedoso videojuego</h5>
-                    </cite>
-                </figcaption>
-            </figure>
+                        El juego es conocido por su innovador sistema de caja de cartón, que permite a los jugadores
+                        esconderse de los enemigos y avanzar furtivamente en el campo de batalla. Además, Metal Gear
+                        Solid
+                        fue uno de los primeros juegos en utilizar cinemáticas de estilo de película para avanzar la
+                        historia.</br>
+                        <cite title="source title"></br>
+                            <h5>A continuacion encontraras diferentes caracteristicas que trae este novedoso videojuego
+                            </h5>
+                        </cite>
+                    </figcaption>
+                </figure>
+            </div>
         </div>
-    </div>
     </section>
     <section id="galeria">
         <div class="row-origin fila">
-            
-                <div class="col-md-4 zoom position-relative">
-                    <img class="img_cuadro" src="../public/images/caracteristicas/mgs-pw-no1.webp" alt="Infiltracion">
-                    <p class="detalle position-absolute">infiltrate en bases enemigas</p>
-                </div>
-            
+
+            <div class="col-md-4 zoom position-relative">
+                <img class="img_cuadro" src="../public/images/caracteristicas/mgs-pw-no1.webp" alt="Infiltracion">
+                <p class="detalle position-absolute">infiltrate en bases enemigas</p>
+            </div>
+
             <div class="col-md-4 zoom position-relative">
                 <img class="img_cuadro" src="../public/images/caracteristicas/mgs-pw-no2.jpg" alt="Multiplayer">
                 <p class="detalle position-absolute">Juega en modo cooperativo</p>
@@ -211,32 +220,42 @@
                         simular que "la vida real no se puede pausar".<br><br>
                     </p>
                 </div>
-                <div class="col-md-4 offset-md-1 formulario" id="form-cont">
-                    <form id="contacto">
-                        <div class="mb-3">
-                            <label class="form-label" for="name">Nombre:</label>
-                            <input class="form-control" type="text" name="name" id="name">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label" for="edad">Edad:</label>
-                            <input class="form-control" type="number" name="edad" id="edad">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label" for="email">Email:</label>
-                            <input class="form-control" type="email" name="email" id="email">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label" for="consulta">Consulta:</label>
-                            <textarea class="form-control" name="consulta" id="consulta" cols="30" rows="5"></textarea>
-                        </div>
-                        <div class="mb-3">
-                            <button id="btn_enviar" class="btn btn-primary" type="button">Enviar</button>
-                        </div>
-                    </form>
+                <div class="col">
+                    <div class="col offset-md-1 formulario" id="form-cont">
+                        <form id="contacto">
+                            <div class="mb-3">
+                                <label class="form-label" for="name">Nombre:</label>
+                                <input class="form-control" type="text" name="name" id="name">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="edad">Edad:</label>
+                                <input class="form-control" type="number" name="edad" id="edad">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="email">Email:</label>
+                                <input class="form-control" type="email" name="email" id="email">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label" for="consulta">Consulta:</label>
+                                <textarea class="form-control" name="consulta" id="consulta" cols="30"
+                                    rows="5"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <button id="btn_enviar" class="btn btn-primary" type="button">Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <section class="col offset-md-1 listaReclutas">
+                        <h4>Reclutas recientes de "Militaires Sans Frontières":</h3>
+                            <div class="listaContainer" id="listaContainer">
+                                <ul id="listaNombres" class="listaNombres">
+
+                                </ul>
+                            </div>
+                    </section>
                 </div>
-
             </div>
-
         </div>
     </div>
     <!-- Modal Precompra -->
@@ -322,6 +341,8 @@
     <script src="./Libraries/jspdf.min.js"></script>
     <script src="Libraries/html2canvas.min.js"></script>
     <script src="./modal.js"></script>
+    <script src="randomNames.js"></script>
+
 
 </body>
 

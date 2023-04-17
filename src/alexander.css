@@ -27,7 +27,7 @@
     align-items: center;
     position: fixed;
     width: 100%;
-    z-index: 10;
+    z-index: 11;
 }
 .logo{
     position:absolute;
@@ -111,6 +111,7 @@
 }
 .flex{
     display: flex;
+    justify-content: space-between;
 }
 
 .letras_info{
@@ -135,7 +136,8 @@ h3{
     padding: 40px;
     border-radius: 20px;
     backdrop-filter: opacity(.5);
-    height: 100%;
+    height: fit-content;
+    margin-bottom: 40px;
 }
 label{
     color: #ACB2B8;
@@ -189,7 +191,12 @@ height: 320px;
     text-transform: uppercase;
 }
 
-a{
+
+.margen{
+    margin-left: 200px;
+}
+.margen a{
+    padding-left: 10px;
     text-decoration: none !important;
-    
+    color: white;
 }

@@ -1,26 +1,32 @@
 .listaReclutas{
     display: flex;
     flex-flow: column;
-    width:200px;
-    height:300px;
+    height:500px;
     overflow: hidden;
-    border: 3px red solid;
+    background-color: rgba(0, 0, 0, 0.552) ;
+    backdrop-filter: opacity(.5);
+    border-radius: 20px;
+    
 }
 
 .listaReclutas h4{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.8);
     margin:0;
     z-index: 2;
+    padding: 10px 20px;
+
 }
 
 .listaContainer{
-    height: 200px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 40px;
+    height: 70%;
     overflow: hidden;
 }
 
 .listaNombres{
-    border:2px blue solid;
-    background-color: aqua;
+    color:white;
     -webkit-animation-name: move;
     -webkit-animation-duration: 50s;             /*Determina el tiempo que tarda en completarse la animacion, mientras mas elementos y/o menos sea el tiempo de duracion, mas rapido se van a mover los nombres*/
     -webkit-animation-iteration-count: infinite;
