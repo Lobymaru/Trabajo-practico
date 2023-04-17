@@ -1,13 +1,12 @@
 $(document).ready(function() {
 
     var page = 1;
-    var intervalo = setInterval(getNames, 15000);
     var arregloNombres = [];
     getNames();
-    
+
     function getNames() {
         $.ajax({
-            url: "https://randomuser.me/api/?results=15",
+            url: "https://randomuser.me/api/?results=100",
             type:"GET",
             data:"json"
         })
@@ -21,10 +20,6 @@ $(document).ready(function() {
                 console.log(item);       
                 listaDeNombres.appendChild(item);
             })
-            
-            console.log(arregloNombres);
-            
-            
         })
     };
 
