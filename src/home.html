@@ -294,11 +294,11 @@
                     <option value="Italia">Italia</option>
                 </select> <br>
                 <label class="form-label" for="campoCiudad">Ciudad:</label> <br>
-                <input class="form-control" type="text" id="campoCiudad"> <br>
+                <input class="form-control" type="text" name="ciudad" id="campoCiudad"> <br>
                 <label class="form-label" for="campoCalle">Calle:</label> <br>
-                <input class="form-control" type="text" id="campoCalle"> <br>
+                <input class="form-control" type="text" name="calle" id="campoCalle"> <br>
                 <label class="form-label" for="campoTelefono">Telefono:</label> <br>
-                <input class="form-control" type="text" id="campoTelefono"> <br>
+                <input class="form-control" type="text" name="telefono" id="campoTelefono"> <br>
             </form>
             <button type="button" id="atras" class="btn btn-secondary" onclick="prevPage()">Atras</button>
             <button type="button" id="siguienteDos" class="btn btn-primary">Siguiente</button>
@@ -310,7 +310,7 @@
                 <img src="../public/images/Konami-Logo-2003.png" alt="Logo Konami" class="logo_modal"> <br>
                 <div class="py-5 px-4">
                     <h5>Gracias por reservar el Metal Gear: Peace Walker! <br>
-                        Guarde este recibo para reclamar su reserva el díadel lanzamiento</h5><br>
+                        Guarde este recibo para reclamar su reserva el día del lanzamiento</h5><br>
                     <p id="reciboNombre"></p>
                     <p id="reciboNacimiento"></p>
                     <p id="reciboCorreo"></p>
@@ -339,9 +339,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.0/jquery.validate.min.js"></script>
     <script type="text/javascript" src="validacion_formulario.js"></script>
     <script src="./Libraries/jspdf.min.js"></script>
-    <script src="Libraries/html2canvas.min.js"></script>
+    <script src="./Libraries/html2canvas.min.js"></script>
     <script src="./modal.js"></script>
-    <script src="randomNames.js"></script>
+    <script src="./randomNames.js"></script>
 
 
 </body>
