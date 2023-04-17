@@ -138,7 +138,7 @@ function createRecipe() {
     var doc = new jsPDF({
       orientation: "l",
       unit: "cm",
-      format: "a6"
+      format: [15, 8]
     });  //Creamos el documento PDF
     doc.addImage(img, "JPEG", 0, 0);  //Agregamos la imagen al documento PDF indicando el tipo y los margenes X e Y
     doc.save("comprobante.pdf")  //Guardamos el PDF generado
