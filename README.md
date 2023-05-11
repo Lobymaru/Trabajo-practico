@@ -1,13 +1,17 @@
 # ARGENTINA-PROGRAMA
 
-### Este es un template a modo de ejemplo, o recurso para empezar con el trabajo práctico integrador de *Argentina Programa*, contiene una estructura básica (HTML, Js, CSS) se agrega un header con menú y sus respectivos archivos js y hoja de estilos CSS
+### Este es trabajo práctico integrador del curso *Desarrollo Web Inicial* del trayecto formativo de *Argentina Programa 4.0*, contiene una "Landing Page" para simular la reserva de un producto (sin entrar en el tema de manejo de bases de datos o gestores de pago)
 
-#### Pueden descargar los archivos y agregarlos a sus repositorios respectivos a cada grupo o pueden clonarlo y continuar con el desarrollo en los mismos archivos (Luego se deben subir al repositorio respectivo del grupo).
+#### La pagina cumple con las consignas pautadas:
+  •Formulario tipo wizard con sus respectivas validaciones (Modal de precompra)
+  •Generar un documento PDF con la informacion ingresada en el formulario (Modal de precompra)
+  •Conectar y utilizar una API (Lista de nombres aleatorios)
 
-* Comando para clonar el repositorio: `git clone https://gitlab.com/revol.lisandro/arg-prog-template.git` .
+* Comando para clonar el repositorio: `git clone https://github.com/Lobymaru/Trabajo-practico.git` .
 * Pueden descargarlo en formato .zip o .rar y utilizar los archivos a su conveniencia.
 
 
 
-
-~ Creado por Revol Lisandro - revol.lisandro@gmail.com
+~ Creado por:
+  •Lobato Franco - Lobymaru@gmail.com 
+  •Barroso Alexander - https://github.com/jehosuab
