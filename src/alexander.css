@@ -1,0 +1,202 @@
+.principal{
+    background-image: url('../disenio/black_snake_derecha.jpg');
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+}
+.segundario{
+    padding-top: 80px;
+    background-image: url('../disenio/fondo_metal.jpg');
+    width: 100%;
+    height: auto;
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn_precompra{
+    position: absolute;
+    right: 0;
+}
+
+.nav-bar{
+    background-color: black;
+    background-image: url('../disenio/global-nav-bg.png');
+    background-size: 2px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 11;
+}
+.logo{
+    position:absolute;
+    left: 0;
+    width: 180px;
+    height: 140px;
+    margin-right: 200px;
+}
+
+.logo_blanco{
+    margin-top: 100px;
+    margin-left: 100px;
+}
+.trailer{
+    margin-top: 60px;
+    display: flex;
+    height: 35.5vh;
+    margin-left: 110px;
+}
+.letra_medio{
+    font-family: Montserrat;
+    font-size: 16px;
+    color: white;
+    margin-left: 140px;
+    margin-top: -15px;
+}
+.nombre{
+    font-family: Montserrat;
+    font-size: 16px;
+    color: white;
+    margin-left: 140px;
+    margin-top: -15px;
+    text-align: end;
+}
+
+.fila{
+    display: flex;
+}
+.fila-1{
+    display: flex;
+}
+.zoom{
+    overflow: hidden;
+    height: 315px;
+    width: 506.5px;
+}
+.detalle{
+    background-color: black;
+    color: white;
+    height: 60px;
+    z-index: 10;
+    width: 100%;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+    display: flex;
+    text-transform:uppercase;
+}
+.img_cuadro{
+    height: 255px;
+    width: 506.5px;
+    transition: 0.5s;
+    object-fit: cover;
+}
+.img_descripcion{
+    height: 100%;
+
+}
+
+.img_cuadro:hover{
+    transform: scale(1.2);
+}
+
+.descripcion{
+    background-color: rgba(0, 0, 0, 0.552) ;
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: opacity(.5);
+    margin-bottom: 40px;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.letras_info{
+    font-family: "Motiva Sans", Sans-serif;
+    color: #ACB2B8;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: justify;
+}
+h3{
+    color: #FFFFDF;
+    font-weight: bold;
+    background-image: linear-gradient(to right, white, gray, rgba(0, 0, 0, 0));
+    background-position: bottom;
+    background-size: 100% 2px;
+    background-repeat: no-repeat;
+    padding-bottom: 5px;
+}
+.formulario{
+    background-color: rgba(0, 0, 0, 0.552) ;
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 20px;
+    backdrop-filter: opacity(.5);
+    height: fit-content;
+    margin-bottom: 40px;
+}
+label{
+    color: #ACB2B8;
+    font-weight: bold;
+
+}
+.parrafo{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+    padding-top: 30px;
+    padding-right: 40px;
+}
+figcaption{
+    color: white !important;
+}
+.img_circulo{
+height: 320px;
+}
+.img_descripcion{
+    height: 100%;
+
+}
+.parrafo{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+    padding-top: 30px;
+    padding-right: 40px;
+}
+figcaption{
+    color: white !important;
+}
+.img_circulo{
+height: 320px;
+}
+.error{
+    color: rgba(255, 0, 0, 0.866);
+}
+
+.btn_precompra{
+    box-shadow: inset 0px 0px 30px #bb9934;
+    border: 1px solid #679e25;
+    background-color: #85e229;
+    width: 180px;
+    height: 100%;
+    right: 0;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+.margen{
+    margin-left: 200px;
+}
+.margen a{
+    padding-left: 10px;
+    text-decoration: none !important;
+    color: white;
+}

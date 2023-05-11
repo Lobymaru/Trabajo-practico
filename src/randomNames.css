@@ -1,0 +1,54 @@
+.listaReclutas{
+    display: flex;
+    flex-flow: column;
+    height:500px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.552) ;
+    backdrop-filter: opacity(.5);
+    border-radius: 20px;
+    
+}
+
+.listaReclutas h4{
+    background-color: rgba(255, 255, 255, 0.8);
+    margin:0;
+    z-index: 2;
+    padding: 10px 20px;
+
+}
+
+.listaContainer{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 40px;
+    height: 70%;
+    overflow: hidden;
+}
+
+.listaNombres{
+    color:white;
+    -webkit-animation-name: move;
+    -webkit-animation-duration: 50s;             /*Determina el tiempo que tarda en completarse la animacion, mientras mas elementos y/o menos sea el tiempo de duracion, mas rapido se van a mover los nombres*/
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: up;
+    -webkit-animation-timing-function:linear;
+   
+
+}
+
+.listaNombres:hover {
+    -webkit-animation-play-state: paused;
+}
+
+@-webkit-keyframes move {
+    0% {
+       transform:translateY(0);
+    }
+    100% {
+       transform:translateY(-100%);
+    }
+ }
+
+ .listaNombres li{
+    list-style: none;
+ }

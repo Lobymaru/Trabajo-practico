@@ -1,0 +1,92 @@
+/* Control generico de flex */
+.flex{
+    display: flex;
+}
+
+.flex-jc{
+    justify-content: center;
+}
+
+.flex-jsb{
+    justify-content: space-between;
+}
+
+.flex-aic{
+    align-items: center;
+}
+
+.flex-v{
+    flex-flow: column;
+}
+
+
+
+/* Estilo para el logo */
+.logo_modal{
+    position:absolute;
+    left: 0;
+    margin-top: -33px;
+    width: 180px;
+    height: 100px;
+}
+
+/*Estilos para el modal*/
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px; /* Lugar de la caja */
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%; 
+    overflow:auto; /* Habilita el scroll de ser necesario */
+    background-color: rgba(0,0,0,0.6);
+    backdrop-filter: blur(2px);
+}
+
+.modal-precompra{  /* parametros de prueba*/
+    transition: all ease-in-out 0.3s;
+    position:absolute;
+    margin-left: 35%;
+    background-color: rgba(69, 66, 66, 0.552) ;
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    height: 500px;
+    backdrop-filter: opacity(.5);
+}
+
+.close{
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -18px;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Se ajusta el margen debido al logo que quedaba fuera del recibo en la captura de html2canvas*/
+.recibo{
+    height: 100%;
+    margin: -20px -20px;
+}
+.recibo p {
+    padding: 2px 0;
+    margin: 0;
+}
+
+/*Estilo para los errores*/
+.error{
+    font-style: italic;
+    color: red;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}

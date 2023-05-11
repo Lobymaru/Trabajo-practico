@@ -1,0 +1,81 @@
+<!-- Modal Precompra -->
+
+<div id="modal-precompra" class="modal">
+
+    <div id="precompra" class="modal-precompra">
+        <form action="" name="formularioWizard01" id="formularioWizard01">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <label for="campoNombre">Nombre/s:</label> <br>
+            <input type="text" name="nombre" id="campoNombre"> <br>
+            <label for="campoApellido">Apellido/s:</label> <br>
+            <input type="text" name="apellido" id="campoApellido"> <br>
+            <label for="campoMail">Direccion de correo:</label> <br>
+            <input type="email" name="mail" id="campoMail"> <br>
+            <label for="campoNacimiento">Fecha Nacimiento:</label> <br>
+            <input type="date" name="nacimiento" id="campoNacimiento" name="fechaNacimiento"> <br>
+        </form>
+        <button type="button" id="cancelar" class="btn-modal-secondary">Cancelar</button>
+        <button type="button" id="siguienteUno" class="btn-modal-primary">Siguiente</input>
+        
+    </div>
+
+    <div id="precompra" class="modal-precompra">
+        <form action="" id="formularioWizard02">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <label for="campoPais">Pais:</label>
+            <select id="campoPais" name="pais">
+                <option value="Argentina">Argentina</option>
+                <option value="Chile">Chile</option>
+                <option value="Brasi">Brasil</option>
+                <option value="Reino Unido">Reino Unido</option>
+                <option value="España">España</option>
+                <option value="Francia">Francia</option>
+                <option value="Italia">Italia</option>
+            </select> <br>
+            <label for="campoCiudad">Ciudad:</label> <br>
+            <input type="text" id="campoCiudad"> <br>
+            <label for="campoCalle">Calle:</label> <br>
+            <input type="text" id="campoCalle"> <br>
+            <label for="campoTelefono">Telefono:</label> <br>
+            <input type="text" id="campoTelefono"> <br>
+        </form>
+        <button type="button" id="atras" class="btn-modal-secondary" onclick="prevPage()">Atras</button>
+        <button type="button" id="siguienteDos" class="btn-modal-primary">Siguiente</button>
+    </div>
+
+    <div id="precompra" class="modal-precompra">
+
+        <div id="recivo" class="flex flex-v recivo">
+            <img src="../public/images/Konami-Logo-2003.png" alt="Logo Konami" class="logo"> <br>
+            <h4>Gracias por reservar el Metal Gear: Peace Walker! <br>
+                Guarde este recivo para reclamar su reserva el díadel lanzamiento</h4><br>
+            <p id="recivoNombre"></p>
+            <p id="recivoNacimiento"></p>
+            <p id="recivoCorreo"></p>
+            <p id="recivoPais"> </p>
+            <p id="recivoDomicilio"></p>
+            <p id="recivoTelefono"></p>
+            <br>       
+        </div>
+
+        <button type="button" id="download" class="btn-modal-download" ><a href="javascript:createRecipe()">Download</a></button>                    
+        <br>
+        <button type="button" id="atras" class="btn-modal-secondary" onclick="prevPage()">Atras</button>
+        <button type="button" id="finish" class="btn-modal-primary" onclick="closeModal()">Finalizar</button>                
+    </div>
+
+</div>
+
+<!--   Requisitos   -->
+
+<!--              
+    <script
+        src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+        crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="./Libraries/jspdf.min.js"></script>
+    <script src="Libraries/html2canvas.min.js"></script>
+    <script src="./modal.js">
+-->
